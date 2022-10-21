@@ -8,7 +8,7 @@ const pokeRoute = require("./routes/pokeroute");
 const PORT = process.env.PORT || 3000;
 
 //middlewares
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //routes
