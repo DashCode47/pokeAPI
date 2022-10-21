@@ -1,5 +1,4 @@
 const express = require("express");
-const pokemons = require("../models/pokemons");
 const router = express.Router();
 const Pokemon = require("../models/pokemons");
 //POST CREATE
@@ -11,6 +10,12 @@ router.post("/", (req, res) => {
     evolucion: req.body.evolucion,
     altura: req.body.altura,
     peso: req.body.peso,
+    image: req.body.img,
+    stats: {
+      hp: req.body.hp,
+      attack: req.body.attack,
+      defense: req.body.defense,
+    },
   });
   pokemon
     .save()
@@ -28,7 +33,7 @@ router.get("/", async (req, res) => {
   if (!pokemon) res.status(500).send("NOT getted");
   res.send(pokemon);
 });
-//get by id
+//get by name
 router.get("/:pokemonId", async (req, res) => {
   const pokemon = await Pokemon.findOne({
     name: new RegExp(req.params.pokemonId, "i"),

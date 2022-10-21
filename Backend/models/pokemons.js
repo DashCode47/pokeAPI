@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+const Stats = require("./stats");
 /* POKEMON SCHEMA */
 const PokeSchema = new mongoose.Schema({
   name: {
@@ -11,7 +11,7 @@ const PokeSchema = new mongoose.Schema({
     required: true,
   },
   tipo: {
-    type: String,
+    type: Array,
   },
   evolucion: {
     type: String,
@@ -21,6 +21,10 @@ const PokeSchema = new mongoose.Schema({
   },
   peso: {
     type: Number,
+  },
+  stats: Stats.schema,
+  image: {
+    type: String,
   },
 });
 

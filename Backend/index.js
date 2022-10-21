@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+import cors from "cors";
 const app = express();
 require("dotenv").config();
 const pokeRoute = require("./routes/pokeroute");
@@ -7,6 +8,7 @@ const pokeRoute = require("./routes/pokeroute");
 const PORT = process.env.PORT || 3000;
 
 //middlewares
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //routes
@@ -25,4 +27,3 @@ mongoose
 app.listen(PORT, () => {
   console.log("server started at PORT ", PORT);
 });
-/* aa */
