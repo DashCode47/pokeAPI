@@ -35,11 +35,14 @@ router.get("/", async (req, res) => {
 });
 //get by name
 router.get("/:pokemonId", async (req, res) => {
-  const pokemon = await Pokemon.findOne({
-    name: new RegExp(req.params.pokemonId, "i"),
-  });
-  if (!pokemon) res.status(500).send(error.message);
-  res.send(pokemon);
+  try {
+    const pokemon = await Pokemon.findOne({
+      name: new RegExp(req.params.pokemonId, "i"),
+    });
+    res.send(pokemon);
+  } catch (e) {
+    res.status(500).send(error.message);
+  }
 });
 //DELETE ENTRY
 /* router.delete("/:pokeId", async (req, res) => {
