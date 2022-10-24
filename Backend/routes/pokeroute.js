@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Pokemon = require("../models/pokemons");
-//POST CREATE
+///////////////////////////POST CREATE METHOD////////////////////////////////
 router.post("/", (req, res) => {
   const pokemon = new Pokemon({
     name: req.body.name,
@@ -27,7 +27,7 @@ router.post("/", (req, res) => {
     });
 });
 
-//GET METHOD
+//////////////////////////////GET METHOD//////////////////////////////////
 router.get("/", async (req, res) => {
   const pokemon = await Pokemon.find();
   if (!pokemon) res.status(500).send("NOT getted");

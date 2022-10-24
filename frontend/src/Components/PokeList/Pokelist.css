@@ -1,0 +1,55 @@
+.containerList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gridContainer{
+    display: flex;
+    flex-direction: column;
+}
+.emptyImg{
+    height: 400px;
+}
+.notFoundPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.notFoundTitle{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:640px){
+    .containerList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .gridContainer{
+        display: flex;
+        flex-direction: row;
+    }
+    
+   }
+
+   
+   @media screen and (min-width:641px) and (max-width:900px){
+    .containerList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .gridContainer{
+        display: flex;
+        flex-direction: row;
+    }
+    
+   }

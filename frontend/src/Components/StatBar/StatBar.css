@@ -1,0 +1,23 @@
+.statbar{
+    display: flex;
+    flex-direction: row;
+}
+.statbar> :nth-child(1){
+    background-color:rgba(0, 17, 250, 1) ;
+    height: 11px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.statbar> :nth-child(2){
+    background-color:white ;
+    height: 11px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.headStats{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 110px;
+    
+}

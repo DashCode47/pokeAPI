@@ -1,0 +1,77 @@
+openapi: 3.0.3
+info:
+  title: Kruger PokeApi.
+  description: Esta API se encarga de manejar la informacion de la base de datos en Mongosdb de pokemons.
+  version: 1.0.11
+servers:
+  - url: https://fathomless-bastion-21061.herokuapp.com/pokemons
+tags:
+  - name: pokemons
+    description: Endpoint de todos los pokemons registrados.
+
+paths:
+  /{nombre}:
+    get:
+      tags:
+        - pokemons
+      summary: Obtiene la informacion de la base de datos de pokemon segun un nombre dado.
+      parameters:
+        - name: nombre
+          in: path
+          description: Status values that need to be considered for filter
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Pokemon"
+        "400":
+          description: Invalid status value
+  /:
+    get:
+      tags:
+        - pokemons
+      summary: Obtiene la informacion de la base de datos de todos los pokemons.
+
+      responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Pokemon"
+        "400":
+          description: Invalid status value
+
+components:
+  schemas:
+    Pokemon:
+      required:
+        - name
+        - descripcion
+      type: object
+      properties:
+        name:
+          type: string
+        descripcion:
+          type: string
+        tipo:
+          type: string
+        evolucion:
+          type: string
+        altura:
+          type: number
+        peso:
+          type: number
+        stats:
+          type: object
+      xml:
+        name: order
