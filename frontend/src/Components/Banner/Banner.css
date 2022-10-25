@@ -1,0 +1,69 @@
+.banner_Container{
+    height: 100px;
+    width: 72vw;
+    border-radius: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    padding: 20px;
+    background:linear-gradient(rgba(88, 193, 235, 0.5),transparent);
+    background-color:rgb(196, 33, 218);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border-color: rgb(86, 89, 92);
+    box-shadow: 5px 5px 12px rgb(86, 89, 92);
+}
+.kruger_logo{
+    height: 65px;
+    border-radius: 15px;
+}
+.banner_txt{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+.banner_subtxt{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    
+}
+.pikachu{
+    height: 155px;
+    position: absolute;
+    right: -68px;
+    top: -40px;
+}
+.container_title{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:640px){
+    .banner_subtxt{
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        
+    }
+    .banner_txt{
+        font-size: 1.4rem;
+        color: white;
+        text-align: center;
+        padding-right: 25px;
+    }
+    .pikachu{
+        height: 130px;
+        position: absolute;
+        right: -58px;
+        top: -50px;
+    }
+    
+   }

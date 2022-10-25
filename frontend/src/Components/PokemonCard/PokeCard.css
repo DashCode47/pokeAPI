@@ -1,6 +1,6 @@
 .cardContainer{
     background:linear-gradient(rgba(0, 17, 250, 0.5),transparent);
-     background-color:rgb(195, 0, 255);
+    background-color:rgb(195, 0, 255);
     height: 150px;
     width: 170px;
     margin: 7px;
@@ -12,6 +12,9 @@
     position: relative;
     margin-bottom: 20px;
     padding-top: 30px;
+    border-color: rgb(86, 89, 92);
+    box-shadow: 5px 5px 12px rgb(86, 89, 92);
+    
 }
 .typeBox{
     border-style: solid;
@@ -20,6 +23,8 @@
     padding-left: 8px;
     padding-right: 8px;
     margin-bottom: 15px;
+    border-color: rgb(86, 89, 92);
+    box-shadow: 5px 5px 12px rgb(86, 89, 92);
 }
 .typesContainer{
     display: flex;

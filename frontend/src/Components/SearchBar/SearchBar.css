@@ -1,3 +1,38 @@
 .containSearch{
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    width: 72vw;
+    
 }
+.input{
+    border-radius: 25px;
+    border-width: 1px;
+    border-style: solid;
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 4px;
+    
+}
+.btn_search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(209, 190, 226);
+    border-radius: 12.5px;
+    height: 28px;
+}
+
+
+.aboutme{
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 1px;
+    right: 15px;
+}
+
+

@@ -7,7 +7,7 @@ const Card = ({ pokeInfo }) => {
   return (
     <div className="cardContainer">
       <img className="img" src={pokeInfo.img} alt="" />
-      <div>{pokeInfo.name}</div>
+      <div style={{ color: "white" }}>{pokeInfo.name}</div>
       <div className="typesContainer">
         {pokeInfo.tipo.map((x, index) => (
           <div className="typeBox" key={index} style={Colors(x)}>

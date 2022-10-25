@@ -23,7 +23,9 @@ const DetailScreen = () => {
             <div className="name">{location.state.name}</div>
             <div className="description">{location.state.description}</div>
             <div className="stats">
-              <div>Estadisticas</div>
+              <div style={{ fontWeight: "700", color: "white" }}>
+                Estadisticas
+              </div>
               <div className="statsPoints">
                 <div className="listsContainer">
                   <StatBar title={"HP:"} stats={location.state.stats.hp} />

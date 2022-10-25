@@ -4,6 +4,7 @@ import axios from "axios";
 import SearchBar from "../../Components/SearchBar/SearchBar";
 import "./MainScreen.css";
 
+import Banner from "../../Components/Banner/Banner";
 function MainScreen() {
   const [pokemon, setpokemon] = useState([]);
   const currentPage =
@@ -21,7 +22,6 @@ function MainScreen() {
     let timeOut = setTimeout(() => {
       fetchController.abort();
       setloading(false);
-      console.log("abort");
     }, 3500);
     try {
       axios
@@ -45,7 +45,6 @@ function MainScreen() {
     let timeOut = setTimeout(() => {
       fetchController.abort();
       setloading(false);
-      console.log("abort");
     }, 1500);
     setloading(true);
     try {
@@ -57,10 +56,9 @@ function MainScreen() {
       setsearchedItem(res.data);
       setfiltered(true);
       setloading(false);
-      console.log(searchedItem);
     } catch (err) {
       setfiltered(false);
-      alert(err.message);
+      alert("Algo salio mal");
     }
   };
 
@@ -85,7 +83,9 @@ function MainScreen() {
         />
         <img src={require("../../assets/logo2.png")} className="logo" alt="" />
       </div>
+      <Banner />
       <SearchBar onSearch={onSearch} />
+
       <PokeList
         pokemon={pokemon}
         searchedItem={searchedItem}
