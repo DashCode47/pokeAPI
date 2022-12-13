@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pokeapi/static/css/main.7702e5df.css",
+    "main.js": "/pokeapi/static/js/main.846cc642.js",
+    "static/js/787.20ea48e4.chunk.js": "/pokeapi/static/js/787.20ea48e4.chunk.js",
+    "static/media/empty2.gif": "/pokeapi/static/media/empty2.1927d285a5bcd5e06d46.gif",
+    "static/media/pokeball.gif": "/pokeapi/static/media/pokeball.9a151b8f3b475b518e30.gif",
+    "static/media/wallpaper2.jpg": "/pokeapi/static/media/wallpaper2.52eed20390e4938a4b05.jpg",
+    "static/media/pikachu.png": "/pokeapi/static/media/pikachu.1cbbb2f880943b0d4170.png",
+    "static/media/logo2.png": "/pokeapi/static/media/logo2.1b6252fbeefc869b14ed.png",
+    "static/media/skip.png": "/pokeapi/static/media/skip.abd34b86d0b9d15d3f7a.png",
+    "index.html": "/pokeapi/index.html",
+    "static/media/web.config": "/pokeapi/static/media/web.531c2fe8e78d5c7deece.config",
+    "main.7702e5df.css.map": "/pokeapi/static/css/main.7702e5df.css.map",
+    "main.846cc642.js.map": "/pokeapi/static/js/main.846cc642.js.map",
+    "787.20ea48e4.chunk.js.map": "/pokeapi/static/js/787.20ea48e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7702e5df.css",
+    "static/js/main.846cc642.js"
+  ]
+}
